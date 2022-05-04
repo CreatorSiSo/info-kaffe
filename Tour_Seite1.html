@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eine kleine Tour durch das Museum</title>
+</head>
+
+<style>
+  .text-bold {
+    font-weight: bold;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tour-table {
+    display: flex;
+    width: 720px;
+    background-color: hsl(222, 6%, 60%);
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+
+  .tour-table td {
+    padding: 1rem;
+    border: 1px solid black;
+  }
+
+  .tour-table th {
+    border: 1px solid black;
+    padding-block: 1.8rem;
+    background-color: hsl(222, 6%, 69%);
+  }
+
+  .tour-table tr > .col-1 {
+    width: 16%;
+  }
+
+  .tour-table tr > .col-2 {
+    width: 25%;
+  }
+
+  .tour-table tr > .col-3 {
+    width: 48%;
+  }
+
+  .tour-table tr > .col-4 {
+    width: 11%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    color: red;
+  }
+
+  body {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 3%, 93%);
+  }
+</style>
+
+<body>
+  <header class="header" style="width: 100%;">
+    <h1 class="text-center">
+      <div>
+        Eine kleine Tour durch das Museum
+      </div>
+    </h1>
+  </header>
+  <main class="tour-detail">
+    <table class="tour-table">
+      <tbody>
+        <tr>
+          <th class="col-1">Epoche</th>
+          <th class="col-2">Künstler/Kunstwerk</th>
+          <th class="col-3">Werk</th>
+          <th class="col-4">weitere Werke</th>
+        </tr>
+        <tr>
+          <td class="col-1">1830 bis 1836</td>
+          <td class="col-2">
+            <p>
+              Katsushika Hokusai
+            </p>
+            <p>
+              "Kanagawa oki nami ura"
+            </p>
+          </td>
+          <td class="col-3"><img src="/assets/welle.jpg" alt=""></td>
+          <td class="col-4"><a href="https://de.wikipedia.org/wiki/Die_gro%C3%9Fe_Welle_vor_Kanagawa">36 Ansichten des
+              Berges Fuji</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-1" rowspan="2">1903 bis 1906</td>
+          <td class="col-2">
+            <p>
+              C. M. Coolidge
+            </p>
+            <p>
+              "His Station and 4 Aces"
+            </p>
+          </td>
+          <td class="col-3"><img src="/assets/hunde.jpg" alt=""></td>
+          <td class="col-4"><a href="https://de.wikipedia.org/wiki/Dogs_Playing_Poker">Dogs Playing Poker</a></td>
+        </tr>
+        <tr>
+          <td class="col-2">
+            <p>
+              Friedrich Schwinge
+            </p>
+            <p>
+              "Landschaft mit Dünen"
+            </p>
+          </td>
+          <td class="col-3"><img src="/assets/strand.jpg" alt=""></td>
+          <td class="col-4"><a href="https://de.wikipedia.org/wiki/Friedrich_Schwinge">Landschafts- und Marinemalerei</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <a href="Tour_Index.html">Hier geht es zurück</a>
+</body>
+
+</html>
